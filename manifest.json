@@ -1,14 +1,12 @@
 {
   "name": "Uh-Ba-Un-Ta-Uh Toggle Chrome Extension",
-  "description": "Toggle Extension On/Off",
+   "description": "Temporarily disable your specify extension with one click. Click again and you re-enable your specify extension.",
   "version": "1.0",
-  "optional_permissions": ["management"],
   "permissions": [
-    "tabs",  "http://*/*", "https://*/*"
+    "management", "tabs",  "http://*/*", "https://*/*"
   ],
   "browser_action": {
       "default_title": "Toggle Extension On/Off",
-   "description": "Temporarily disable your specify extension with one click. Click again and you re-enable your specify extension.",
       "default_icon": "icon.png",
       "default_popup": "popup.html"
   },
