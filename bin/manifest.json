@@ -3,7 +3,7 @@
    "description": "Temporarily disable your specify extension with one click. Click again and you re-enable your specify extension.",
   "version": "1.0",
   "permissions": [
-    "management", "tabs",  "http://*/*", "https://*/*"
+    "management", "tabs", "notifications", "http://*/*", "https://*/*"
   ],
   "browser_action": {
       "default_title": "Toggle Extension On/Off",

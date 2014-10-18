@@ -11,11 +11,29 @@ function click(e) {
 					extensionInfo[n].isApp != true &&
 					extensionInfo[n].mayDisable == true ){
 						chrome.management.setEnabled(extensionInfo[n].id, false);
-					} else {chrome.management.setEnabled(extensionInfo[n].id, true);}
+						z="Disabled "+extensionInfo[n].name;
+						notify (z, z);
+					} 
+					else {
+						chrome.management.setEnabled(extensionInfo[n].id, true);
+						z="Enabled "+extensionInfo[n].name;
+						notify (z, z);
+					}
+					// Test for notification support.
+
 				}
 			}
 			window.close();
 		});
+}
+
+function notify (title, msg) {
+	if (window.Notification) {
+		var z=new Notification(title, {
+			icon: 'icon.png',
+			body: "Uh-Ba-Un-Ta-Uh Toggle Chrome Extension: "+msg
+		});
+	}
 }
 
 document.addEventListener('DOMContentLoaded', function () {
