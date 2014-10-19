@@ -1,7 +1,8 @@
 {
-  "name": "Uh-Ba-Un-Ta-Uh Toggle Chrome Extension",
+  "name": "UhBaUnTaUh Toggle Chrome Extension",
    "description": "Temporarily disable your specify extension with one click. Click again and you re-enable your specify extension.",
-  "version": "1.0",
+  "version": "2.0",
+  "options_page": "options.html",
   "permissions": [
     "management", "tabs", "notifications", "http://*/*", "https://*/*"
   ],
