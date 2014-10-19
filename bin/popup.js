@@ -229,7 +229,9 @@ function notify (title, msg) {
 
 window.onload=function() {
 	//generate menu
-	var z="";
+	if(typeof(localStorage["extList"])=="undefined") {
+		localStorage["extList"])="fdpohaocaechififmbbbbbknoalclacl,Full Page Screen Capture 0.0.12\njbfjodonncabnangfknilmabjfofdikc,Adblock for Facebook 0.0.8\noljmaangfgmmokjpnojhfblppgeijikp,Apt-linker 1.3.1\ngeddoclleiomckbhadiaipdggiiccfje,Quick Javascript Switcher 1.3.2\nmomjjajmhkiccgboincmeljllnaflagn,Truewifi Auto Login/Logout 4.0.5\ncdngiadmnkhgemkimkhiilgffbjijcie,FlashBlock 1.2.11.12\ndjflhoibgkdhkhhcedjiklpkjnoahfmg,User-Agent Switcher for Chrome 1.0.36";
+	}
 	var exts=localStorage["extList"].split("\n");
 	for (var i=0;i<exts.length;i++) {
 		ext=exts[i].split(",");
