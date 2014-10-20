@@ -225,6 +225,7 @@ function notify (title, msg) {
 		timeout: 3,
 		body: "UhBaUnTaUh Toggle Chrome Extension: "+msg
 	});
+  z.show();
 }
 
 window.onload=function() {
