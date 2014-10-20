@@ -1,6 +1,6 @@
 {
   "name": "UhBaUnTaUh Toggle Chrome Extension",
-   "description": "Temporarily disable your specify extension with one click. Click again and you re-enable your specify extension.",
+   "description": "Temporarily disable your specify extension with one click. Click again to re-enable your specify extension.  \n***Recomment to install 'Libnotify Notifications in Chrome' extension before to let it work well (ID: epckjefillidgmfmclhcbaembhpdeijg). ",
   "version": "2.0",
   "options_page": "options.html",
   "permissions": [
