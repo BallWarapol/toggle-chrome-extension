@@ -191,11 +191,9 @@
 
 }));
 
-
 // Copyright (c) 2014 @UhBaUnTaUh. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-
 
 function click(e) {
 		chrome.management.getAll(function(extensionInfo){
@@ -231,9 +229,10 @@ function notify (title, msg) {
 window.onload=function() {
 	//generate menu
 	if(typeof(localStorage["extList"])=="undefined") {
-		localStorage["extList"])="fdpohaocaechififmbbbbbknoalclacl,Full Page Screen Capture 0.0.12\njbfjodonncabnangfknilmabjfofdikc,Adblock for Facebook 0.0.8\noljmaangfgmmokjpnojhfblppgeijikp,Apt-linker 1.3.1\ngeddoclleiomckbhadiaipdggiiccfje,Quick Javascript Switcher 1.3.2\nmomjjajmhkiccgboincmeljllnaflagn,Truewifi Auto Login/Logout 4.0.5\ncdngiadmnkhgemkimkhiilgffbjijcie,FlashBlock 1.2.11.12\ndjflhoibgkdhkhhcedjiklpkjnoahfmg,User-Agent Switcher for Chrome 1.0.36";
+		localStorage["extList"]="fdpohaocaechififmbbbbbknoalclacl,Full Page Screen Capture 0.0.12\njbfjodonncabnangfknilmabjfofdikc,Adblock for Facebook 0.0.8\noljmaangfgmmokjpnojhfblppgeijikp,Apt-linker 1.3.1\ngeddoclleiomckbhadiaipdggiiccfje,Quick Javascript Switcher 1.3.2\nmomjjajmhkiccgboincmeljllnaflagn,Truewifi Auto Login/Logout 4.0.5\ncdngiadmnkhgemkimkhiilgffbjijcie,FlashBlock 1.2.11.12\ndjflhoibgkdhkhhcedjiklpkjnoahfmg,User-Agent Switcher for Chrome 1.0.36";
 	}
 	var exts=localStorage["extList"].split("\n");
+	var z="";
 	for (var i=0;i<exts.length;i++) {
 		ext=exts[i].split(",");
 		z+='<div id="'+ext[0]+'">'+ext[1]+'</div>';

@@ -4,7 +4,7 @@
   "version": "2.0",
   "options_page": "options.html",
   "permissions": [
-    "management", "tabs", "notifications", "http://*/*", "https://*/*"
+    "management", "tabs", "alarms", "notifications", "http://*/*", "https://*/*"
   ],
   "browser_action": {
       "default_title": "Toggle Extension On/Off",
